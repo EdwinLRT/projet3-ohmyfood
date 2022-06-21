@@ -7,8 +7,8 @@
     <title>Oh my food</title>
    
     <!--Css links -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="sass/normalize.css">
+    <link rel="stylesheet" href="sass/mobile.css">
 
     <!-- Shrikhand Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,35 +29,46 @@
 
     <!-- HEADER -->
     <header>
-        <img src="Brief/ressources/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo-ohmyfood">
+        <img class="header__logo" src="Brief/ressources/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo-ohmyfood">
     </header>
 
     <!-- MAIN  -->
     <main>
 
         <section class="location">
-
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
         </section>
         <section class="discover">
-            <div>
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            </div>
-            <button>Explorez nos restaurants</button>
+            <h2 class="discover discover__title">Réservez le menu qui vous convient</h2>
+            <p class="discover discover__slogan">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <button class="discover discover__button">Explorez nos restaurants</button>
         </section>
+
         <section class="explanation">
+
             <div>
-                <h2>Fonctionnement</h2>
+                <h2 class="explanation__title">Fonctionnement</h2>
             </div>
-            <div>
+
+            <div  class="explanation__stepOne">
+                <i class="fa-solid fa-circle-1"></i>
+                <i class="fa-solid fa-mobile-screen-button"></i>
                 <h5>Choisissez un restaurant</h5>
             </div>
-            <div>
+
+            <div class="explanation__stepTwo">
+                <i class="fa-solid fa-circle-2"></i>
+                <i class="fa-solid fa-list-ul"></i>
                 <h5>Composez votre menu</h5>
             </div>
-            <div>
+
+            <div class="explanation__stepThree">
+                <i class="fa-solid fa-circle-3"></i>
+                <i class="fa-solid fa-store"></i>
                 <h5>Dégustez au restaurant</h5>
             </div>
+        
         </section>
         <section class="restaurantCards">
             <div>
@@ -76,9 +87,11 @@
 
     <!--FOOTER-->
     <footer>
-        <h3>ohmyfood</h3>]
+        <h3 class="footer__title">ohmyfood</h3>
         <ul>
+            <i class="fa-solid fa-utensils"></i>
             <li>Proposez un restaurant</li>
+            <i class="fa-solid fa-handshake-angle"></i>
             <li>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li>Contact</li>
