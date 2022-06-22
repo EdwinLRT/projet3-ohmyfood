@@ -29,7 +29,7 @@
 
     <!-- HEADER -->
     <header>
-        <img class="header__logo" src="Brief/ressources/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo-ohmyfood">
+        <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo-ohmyfood">
     </header>
 
     <!-- MAIN  -->
@@ -37,7 +37,8 @@
 
         <section class="location">
             <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>
+            <input type="text" placeholder="Paris, Belleville">
+
         </section>
         <section class="discover">
             <h2 class="discover discover__title">Réservez le menu qui vous convient</h2>
@@ -51,35 +52,65 @@
                 <h2 class="explanation__title">Fonctionnement</h2>
             </div>
 
-            <div  class="explanation__stepOne">
-                <i class="fa-solid fa-circle-1"></i>
+            <div  class="explanation__step">
+                <p class="explanation__numberDot">1</p>
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <h5>Choisissez un restaurant</h5>
             </div>
 
-            <div class="explanation__stepTwo">
-                <i class="fa-solid fa-circle-2"></i>
+            <div class="explanation__step">
+                <p class="explanation__numberDot">2</p>
                 <i class="fa-solid fa-list-ul"></i>
                 <h5>Composez votre menu</h5>
             </div>
 
-            <div class="explanation__stepThree">
-                <i class="fa-solid fa-circle-3"></i>
+            <div class="explanation__step">
+                <p class="explanation__numberDot">3</p>
                 <i class="fa-solid fa-store"></i>
                 <h5>Dégustez au restaurant</h5>
             </div>
         
         </section>
-        <section class="restaurantCards">
-            <div>
+        <section class="restaurants">
+            <div class="restaurants__title">
                 <h2>Restaurants</h2>
             </div>
-            <div>
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
+            <a href="" class="restaurants__cards">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la-palette-de-gout-menilmontant">
+                <div class="restaurants__cards--sub">
+                    <h4>La palette de goût</h4>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Ménilmontant</p>
+                </div>
+            </a>
                 
-            </div>
+            <a href="" class="restaurants__cards">
+                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la-note-enchantee-charonne">
+                <div class="restaurants__cards--sub">
+                    <h4>La note enchantée</h4>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Charonne</p>
+                </div>
+            </a>
+                
+            <a href="a-la-francaise.html" class="restaurants__cards">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a-la-francaise-cite-rouge">
+                <div class="restaurants__cards--sub">
+                    <h4>À la française</h4>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Cité Rouge</p>
+                </div>
+            </a>
+                
+            <a href="" class="restaurants__cards">
+                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le-delice-des-sens-folie-mericourt">
+                <div class="restaurants__cards--sub">
+                    <h4>Le délice des sens</h4>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Folie-Méricourt</p>
+                </div>
+            </a>
+
         </section>
 
     </main>
@@ -89,10 +120,8 @@
     <footer>
         <h3 class="footer__title">ohmyfood</h3>
         <ul>
-            <i class="fa-solid fa-utensils"></i>
-            <li>Proposez un restaurant</li>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <li>Devenir partenaire</li>
+            <li><i class="fa-solid fa-utensils"></i>Proposez un restaurant</li>
+            <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li>Contact</li>
         </ul>
