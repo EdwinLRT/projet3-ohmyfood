@@ -25,12 +25,20 @@ header{
     padding: 20px 0px;
     background-color: $colorBackgroundMid;
     .fa-solid{
+        display: flex;
         align-items: center;
         align-content: center;
         margin-right: 10px;
+        font-size: 18px;
     }
-    p{
-        margin: 0 0 0 0;
+    input{
+        text-align: center;
+        color: black;
+        font-weight: 500;
+        width: 35%;
+        border: none;
+        padding: 0 0 0 0;
+        background-color: $colorBackgroundMid;
     }
 }
 
@@ -43,13 +51,11 @@ header{
     justify-content: center;
     text-align: center;
 
-
     &__title{
         display: flex;
         justify-content: center;
         padding: 0px 20px 0px 20px;
         margin-top: 35px ;
-        
     }
     &__slogan{
         font-weight: 200;
@@ -71,59 +77,131 @@ header{
 .explanation{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 5px;
+    padding-bottom: 30px;
 
     &__title{
         width: 100%;
         margin-left: 20px;
+    }
+    &__numberDot{
+        color: #fff;
+        font-size: 14px;
+        background-color: $colorPrime;
+        padding: 5px 10px;
+        border-radius: 20px;
+        position: absolute;
+        left: 2%;
+    }
+    &__step{
+        width: 100%;
+        border-radius: 15px 15px 15px 15px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: $colorBackgroundLight;
+        margin: 10px 20px 10px 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
+        .fa-solid{
+            color: grey;
+            position: absolute;
+            left: 17%;
+        }
     }
-    &__stepOne{
+
+}
+
+// Restaurant cards
+
+.restaurants{
+    background-color: $colorBackgroundLight ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    
+    &__title{
+        width: 90%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    &__cards{
+        background-color: #fff;
+        border-radius: 30px;
+        width: 90%;
+        position: relative;
+        margin: 8px 0 8px 0;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    img{
+        height: 160px;
         width: 100%;
-        border: solid 2px red;
-        border-radius: 15px 15px 15px 15px;
-        text-align: center;
+        object-fit: cover;
+        object-position: center bottom;
+        border-radius: 20px 20px 0 0;
+    }
+    &__cards--sub{
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        background-color: $colorBackgroundLight;
-        margin: 10px 20px 10px 20px;
     }
-    &__stepTwo{
-        width: 100%;
-        border: solid 2px red;
-        border-radius: 15px 15px 15px 15px;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        background-color: $colorBackgroundLight;
-        margin: 10px 20px 10px 20px;
-    }
-    &__stepThree{
-        width: 100%;
-        border: solid 2px red;
-        border-radius: 15px 15px 15px 15px;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        background-color: $colorBackgroundLight;
-        margin: 10px 20px 10px 20px;
-    }
+        h4{
+            width: 100%;
+            margin: 10px 0 5px 0;
+            color: black;
+            font-size: 18px;
+        }
+        p{
+            margin: 5px 0 17px 0;
+            font-size: 16px;
+            font-weight: 300;
+            color: black;
+        }
+
+        i{
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+            font-size: 25px;
+            color: $colorBackgroundDark;
+            position: absolute;
+            left: 85%;
+            bottom: 9%;
+        }
+
 }
 
 // Footer
 footer{
     background-color: $colorBackgroundDark;
     color: #fff;
+    padding-bottom: 20px;
     .footer__title{
-        padding: 20px 20px;
+        margin:0;
+        padding: 20px 20px 15px 20px;
         font-family: $highlightFont;
+    }
+    ul{
+        padding-left: 20px;
+        margin: 0;
+    }
+    li{
+
+        list-style: none;
+        padding: 5px 0px;
+        i{
+            padding-right: 10px;
+        }
+        .fa-handshake-angle{
+            font-size: 12px;
+        }
     }
 }
