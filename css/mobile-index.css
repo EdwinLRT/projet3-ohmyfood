@@ -61,6 +61,7 @@ header .header__logo {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   margin-bottom: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .explanation {
@@ -184,4 +185,4 @@ footer li i {
 }
 footer li .fa-handshake-angle {
   font-size: 12px;
-}/*# sourceMappingURL=mobile.css.map */
+}/*# sourceMappingURL=mobile-index.css.map */

@@ -120,11 +120,12 @@ header a {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   margin: 35px 0 60px 0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 footer {
   background-color: #353535;
-  color: #fff;
+  color: rgb(255, 0, 0);
   padding-bottom: 20px;
 }
 footer .footer__title {
