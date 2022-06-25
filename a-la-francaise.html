@@ -8,7 +8,9 @@
    
     <!--Css links -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mobile/mobile-restaurants-menu.css">
+    <link rel="stylesheet" media='screen and (max-width: 768px)' href="css/mobile-restaurants-menu.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 769px) and (max-width: 992px)' href="css/tablet-restaurants-menu.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 993px)' href="css/desktop-restaurants-menu.css"/>
 
     <!-- Shrikhand Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,83 +51,87 @@
                 <h2>À la française</h2>
                 <i class="fa-regular fa-heart"></i>
             </div>
-
-            <div class="menu__list">
-                <h3>Entrées</h3>
-                <div id="underline"> </div>
+            <div class="menu__starters">
+                <div class="menu__list">
+                    <h3>Entrées</h3>
+                    <div id="underline"> </div>
+                </div>
+                    <a href="" class="menu__plate">
+                        <h4>Tartare de poulpe acidulé</h4>
+                        <div class="menu__plate__description">
+                            <p>Aux zestes d'orange</p>
+                            <p class="menu__plate__price">25€</p>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate">
+                        <h4>Velouté de légumes d'antan</h4>
+                        <div class="menu__plate__description">
+                            <p>Carotte, panais, topinambour</p>
+                            <p class="menu__plate__price">35€</p>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate">
+                        <h4>Soupe à l'oignon</h4>
+                        <div class="menu__plate__description">
+                            <p>Revisitée</p>
+                            <p class="menu__plate__price">20€</p>
+                        </div>
+                    </a>
             </div>
-                <a href="" class="menu__plate">
-                    <h4>Tartare de poulpe acidulé</h4>
-                    <div class="menu__plate__description">
-                        <p>Aux zestes d'orange</p>
-                        <p class="menu__plate__price">25€</p>
-                    </div>
-                </a>
-                <a href="" class="menu__plate">
-                    <h4>Velouté de légumes d'antan</h4>
-                    <div class="menu__plate__description">
-                        <p>Carotte, panais, topinambour</p>
-                        <p class="menu__plate__price">35€</p>
-                    </div>
-                </a>
-                <a href="" class="menu__plate">
-                    <h4>Soupe à l'oignon</h4>
-                    <div class="menu__plate__description">
-                        <p>Revisitée</p>
-                        <p class="menu__plate__price">20€</p>
-                    </div>
-                </a>
-
-            <div class="menu__list">
-                <h3>Plats</h3>
-                <div id="underline"> </div>
-            </div>
-                <a href="" class="menu__plate">
-                    <h4>Coquilles Saint-Jacques</h4>
-                    <div class="menu__plate__description">
-                        <p>Accompagnées d'une purée de panais</p>
-                        <p class="menu__plate__price">40€</p>
-                    </div>
-                </a>
-                <a href="" class="menu__plate">
-                    <h4>Magret de canard</h4>
-                    <div class="menu__plate__description">
-                        <p>Et parmentier de pommes de terre</p>
-                        <p class="menu__plate__price">35€</p>
-                    </div>
-                </a>
-                <a href="" class="menu__plate">
-                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                    <div class="menu__plate__description">
-                        <p>Sur son lit de gnocchis aux légumes</p>
-                        <p class="menu__plate__price">44€</p>
-                    </div>
-                </a>   
-            <div class="menu__list">
-                <h3>Desserts</h3>
-                <div id="underline"> </div>
-            </div>
-                <a href="" class="menu__plate">
-                    <h4>Pétales de violettes glacés</h4>
-                    <div class="menu__plate__description">
-                        <p>Et purée de noisettes</p>
-                        <p class="menu__plate__price">44€</p>
-                    </div>
-                </a>
-                <a href="" class="menu__plate">
-                    <h4>Fondant au chocolat</h4>
-                    <div class="menu__plate__description">
-                        <p>Revisité</p>
-                        <p class="menu__plate__price">22€</p>
-                    </div>
-                </a>
-                <a href="" class="menu__plate">
-                    <h4>Millefeuille croustillant</h4>
-                    <div class="menu__plate__description">
-                        <p>Myrtilles et pâte d’amande</p>
-                        <p class="menu__plate__price">23€</p>
-                    </div>
-                </a>   
+            <div class="menu__mains">
+                <div class="menu__list">
+                    <h3>Plats</h3>
+                    <div id="underline"> </div>
+                </div>
+                    <a href="" class="menu__plate">
+                        <h4>Coquilles Saint-Jacques</h4>
+                        <div class="menu__plate__description">
+                            <p>Accompagnées d'une purée de panais</p>
+                            <p class="menu__plate__price">40€</p>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate">
+                        <h4>Magret de canard</h4>
+                        <div class="menu__plate__description">
+                            <p>Et parmentier de pommes de terre</p>
+                            <p class="menu__plate__price">35€</p>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate">
+                        <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                        <div class="menu__plate__description">
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <p class="menu__plate__price">44€</p>
+                        </div>
+                    </a> 
+            </div>  
+            <div class="menu__desserts">
+                <div class="menu__list">
+                    <h3>Desserts</h3>
+                    <div id="underline"> </div>
+                </div>
+                    <a href="" class="menu__plate">
+                        <h4>Pétales de violettes glacés</h4>
+                        <div class="menu__plate__description">
+                            <p>Et purée de noisettes</p>
+                            <p class="menu__plate__price">44€</p>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate">
+                        <h4>Fondant au chocolat</h4>
+                        <div class="menu__plate__description">
+                            <p>Revisité</p>
+                            <p class="menu__plate__price">22€</p>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate">
+                        <h4>Millefeuille croustillant</h4>
+                        <div class="menu__plate__description">
+                            <p>Myrtilles et pâte d’amande</p>
+                            <p class="menu__plate__price">23€</p>
+                        </div>
+                    </a>   
+                </div>
 
         </section>
         <!-- Order button  -->
@@ -144,7 +150,9 @@
             <li><i class="fa-solid fa-utensils"></i>Proposez un restaurant</li>
             <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
-            <li>Contact</li>
+            <a href="mailto: contact@ohmyfood.com">
+                Contact
+            </a>
         </ul>
 
     </footer> 

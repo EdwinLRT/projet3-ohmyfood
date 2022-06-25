@@ -19,7 +19,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 25%;
 
     }
     a{
@@ -33,9 +33,8 @@ header{
 }
 
 main {
-	background-color: $colorBackgroundMid ;
+	background-color: $colorBackgroundMid;
 }
-
 // Image section 
 .restaurants__image{
     width: 100%;

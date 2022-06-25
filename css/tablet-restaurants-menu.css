@@ -14,7 +14,7 @@ header .header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 25%;
 }
 header a {
   color: black;
@@ -154,4 +154,4 @@ footer li .fa-handshake-angle {
 footer a {
   color: #fff;
   text-decoration: none;
-}/*# sourceMappingURL=mobile-restaurants-menu.css.map */
+}/*# sourceMappingURL=tablet-restaurants-menu.css.map */

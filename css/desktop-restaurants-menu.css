@@ -14,7 +14,7 @@ header .header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 15%;
 }
 header a {
   color: black;
@@ -26,60 +26,82 @@ header a {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #EAEAEA;
 }
 
 .restaurants__image {
-  width: 100%;
+  width: 50%;
   z-index: 1;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .restaurants__image img {
-  width: 100%;
+  width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 30px 30px;
 }
 
 .menu {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #F6F6F6;
-  border-radius: 35px 35px 0 0;
+  border-radius: 35px 35px;
   z-index: 2;
-  margin-top: -50px;
+  width: 80%;
 }
-.menu .menu__title {
+.menu__title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   font-family: "Shrikhand", cursive;
   padding: 20px 15px;
 }
-.menu .menu__title h2 {
+.menu__title h2 {
   margin: 0 0;
 }
-.menu .menu__title .fa-regular {
+.menu__title .fa-regular {
   font-size: 24px;
-  padding-right: 15px;
+  padding: 0 20px;
 }
-.menu .menu__list {
+.menu__starters {
+  width: 30%;
+  padding-bottom: 30px;
+  margin: 0 5px;
+}
+.menu__mains {
+  width: 30%;
+  margin: 0 5px;
+}
+.menu__desserts {
+  width: 30%;
+  margin: 0 5px;
+}
+.menu__list {
   margin-bottom: 15px;
 }
-.menu .menu__list h3 {
+.menu__list h3 {
   text-transform: uppercase;
   font-weight: 300;
   padding-left: 10px;
   margin-bottom: 0;
 }
-.menu .menu__list #underline {
+.menu__list #underline {
   height: 3px;
   background-color: #99e2d0;
-  width: 10%;
+  width: 3%;
   position: absolute;
   margin: 3px 0 0 10px;
 }
-.menu .menu__plate {
+.menu__plate {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -90,21 +112,21 @@ main {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   margin: 8px 8px;
 }
-.menu .menu__plate h4 {
+.menu__plate h4 {
   font-size: 20px;
   font-weight: 500;
   margin: 0 0;
 }
-.menu .menu__plate p {
+.menu__plate p {
   padding-top: 5px;
   margin: 0 0;
 }
-.menu .menu__plate__description {
+.menu__plate__description {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
 }
-.menu .menu__plate__price {
+.menu__plate__price {
   display: flex;
   justify-content: flex-end;
   font-weight: 600;
@@ -113,7 +135,6 @@ main {
 .order {
   display: flex;
   justify-content: center;
-  background-color: #F6F6F6;
 }
 .order .order__button {
   padding: 15px 40px;
@@ -154,4 +175,4 @@ footer li .fa-handshake-angle {
 footer a {
   color: #fff;
   text-decoration: none;
-}/*# sourceMappingURL=mobile-restaurants-menu.css.map */
+}/*# sourceMappingURL=desktop-restaurants-menu.css.map */
