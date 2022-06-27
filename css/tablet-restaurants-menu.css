@@ -1,3 +1,87 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  z-index: 999;
+  -webkit-animation: loader-hide 500ms 2000ms forwards;
+          animation: loader-hide 500ms 2000ms forwards;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 10px solid #EAEAEA;
+  border-top: 10px solid #9356DC;
+  border-radius: 50px;
+  -webkit-animation: 1s loading linear infinite;
+  animation: 1s loading linear infinite;
+}
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader-hide {
+  to {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+@keyframes loader-hide {
+  to {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 20px;
+}
+footer .footer__title {
+  margin: 0;
+  padding: 20px 20px 15px 20px;
+  font-family: "Shrikhand", cursive;
+}
+footer ul {
+  padding-left: 20px;
+  margin: 0;
+}
+footer li {
+  list-style: none;
+  padding: 5px 0px;
+}
+footer li i {
+  padding-right: 10px;
+}
+footer li .fa-handshake-angle {
+  font-size: 12px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -125,33 +209,4 @@ main {
   margin: 35px 0 60px 0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
-
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding-bottom: 20px;
-}
-footer .footer__title {
-  margin: 0;
-  padding: 20px 20px 15px 20px;
-  font-family: "Shrikhand", cursive;
-}
-footer ul {
-  padding-left: 20px;
-  margin: 0;
-}
-footer li {
-  list-style: none;
-  padding: 5px 0px;
-}
-footer li i {
-  padding-right: 10px;
-}
-footer li .fa-handshake-angle {
-  font-size: 12px;
-}
-footer a {
-  color: #fff;
-  text-decoration: none;
 }/*# sourceMappingURL=tablet-restaurants-menu.css.map */

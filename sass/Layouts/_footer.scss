@@ -1,0 +1,32 @@
+@use '../Utils/variables.scss';
+
+// Footer
+footer{
+    background-color: variables.$colorBackgroundDark;
+    color: #fff;
+    padding-bottom: 20px;
+    .footer__title{
+        margin:0;
+        padding: 20px 20px 15px 20px;
+        font-family: variables.$highlightFont;
+    }
+    ul{
+        padding-left: 20px;
+        margin: 0;
+    }
+    li{
+
+        list-style: none;
+        padding: 5px 0px;
+        i{
+            padding-right: 10px;
+        }
+        .fa-handshake-angle{
+            font-size: 12px;
+        }
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}

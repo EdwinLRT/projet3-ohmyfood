@@ -1,10 +1,11 @@
 // imports
-
-@import 'Utils/_variables.scss' ;
+@use "Utils/variables";
+@use "Components/loader"; 
+@use "Layouts/footer";
 
 // Setup base
 body{
-    font-family: $standardFont;
+    font-family: variables.$standardFont;
 }
 
 // Header 
@@ -33,7 +34,7 @@ header{
 }
 
 main {
-	background-color: $colorBackgroundMid ;
+	background-color: variables.$colorBackgroundMid ;
 }
 
 // Image section 
@@ -52,7 +53,7 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: $colorBackgroundLight;
+    background-color: variables.$colorBackgroundLight;
     border-radius: 35px 35px 0 0;
     z-index: 2;
     margin-top: -50px;
@@ -61,7 +62,7 @@ main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        font-family: $highlightFont;
+        font-family: variables.$highlightFont;
         padding: 20px 15px;
 
         h2{
@@ -130,47 +131,17 @@ main {
 .order{
     display: flex;
     justify-content:center;
-    background-color: $colorBackgroundLight;
+    background-color: variables.$colorBackgroundLight;
     .order__button{
         padding: 15px 40px;
         border: transparent;
         border-radius: 30px 30px;
         color: #fff;
         font-weight: 400;
-        background: linear-gradient(to top left, $colorPrime, $colorSecond);
+        background: linear-gradient(to top left, variables.$colorPrime, variables.$colorSecond);
         margin:35px 0 60px 0;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         cursor: pointer;
     }
 }
 
-// Footer
-footer{
-    background-color: $colorBackgroundDark;
-    color: #fff;
-    padding-bottom: 20px;
-    .footer__title{
-        margin:0;
-        padding: 20px 20px 15px 20px;
-        font-family: $highlightFont;
-    }
-    ul{
-        padding-left: 20px;
-        margin: 0;
-    }
-    li{
-
-        list-style: none;
-        padding: 5px 0px;
-        i{
-            padding-right: 10px;
-        }
-        .fa-handshake-angle{
-            font-size: 12px;
-        }
-    }
-    a{
-        color: #fff;
-        text-decoration: none;
-    }
-}

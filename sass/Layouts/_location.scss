@@ -1,0 +1,26 @@
+@use "../Utils/variables";
+// Location section 
+.location
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0px;
+    background-color: variables.$colorBackgroundMid;
+    .fa-solid{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    input{
+        text-align: center;
+        color: black;
+        font-weight: 500;
+        width: 10%;
+        border: none;
+        padding: 0 0 0 0;
+        background-color: variables.$colorBackgroundMid;
+    }
+}

@@ -1,14 +1,85 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-header {
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 10px 0px;
+  align-items: center;
+  background-color: #F6F6F6;
+  z-index: 999;
+  -webkit-animation: loader-hide 500ms 2000ms forwards;
+          animation: loader-hide 500ms 2000ms forwards;
 }
-header .header__logo {
-  max-width: 50%;
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 10px solid #EAEAEA;
+  border-top: 10px solid #9356DC;
+  border-radius: 50px;
+  -webkit-animation: 1s loading linear infinite;
+  animation: 1s loading linear infinite;
+}
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader-hide {
+  to {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+@keyframes loader-hide {
+  to {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 20px;
+}
+footer .footer__title {
+  margin: 0;
+  padding: 20px 20px 15px 20px;
+  font-family: "Shrikhand", cursive;
+}
+footer ul {
+  padding-left: 20px;
+  margin: 0;
+}
+footer li {
+  list-style: none;
+  padding: 5px 0px;
+}
+footer li i {
+  padding-right: 10px;
+}
+footer li .fa-handshake-angle {
+  font-size: 12px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .location {
@@ -29,7 +100,7 @@ header .header__logo {
   text-align: center;
   color: black;
   font-weight: 500;
-  width: 35%;
+  width: 10%;
   border: none;
   padding: 0 0 0 0;
   background-color: #EAEAEA;
@@ -38,9 +109,8 @@ header .header__logo {
 .discover {
   background-color: #F6F6F6;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 .discover__title {
   display: flex;
@@ -62,6 +132,29 @@ header .header__logo {
   margin-bottom: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+header .header__logo {
+  max-width: 50%;
+}
+
+.location input {
+  width: 35%;
+}
+
+.discover {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .explanation {
@@ -160,33 +253,4 @@ header .header__logo {
   position: absolute;
   left: 85%;
   bottom: 9%;
-}
-
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding-bottom: 20px;
-}
-footer .footer__title {
-  margin: 0;
-  padding: 20px 20px 15px 20px;
-  font-family: "Shrikhand", cursive;
-}
-footer ul {
-  padding-left: 20px;
-  margin: 0;
-}
-footer li {
-  list-style: none;
-  padding: 5px 0px;
-}
-footer li i {
-  padding-right: 10px;
-}
-footer li .fa-handshake-angle {
-  font-size: 12px;
-}
-footer a {
-  color: #fff;
-  text-decoration: none;
 }/*# sourceMappingURL=mobile-index.css.map */
