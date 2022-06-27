@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  opacity: 0.9;
   z-index: 999;
   -webkit-animation: loader-hide 500ms 2000ms forwards;
           animation: loader-hide 500ms 2000ms forwards;

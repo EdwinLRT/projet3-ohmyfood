@@ -2,6 +2,8 @@
 @use "Utils/variables";
 @use "Components/loader"; 
 @use "Layouts/footer";
+@use "Utils/mixins";
+
 
 // Setup base
 body{
@@ -57,6 +59,7 @@ main {
     border-radius: 35px 35px 0 0;
     z-index: 2;
     margin-top: -50px;
+    @include mixins.menu-load;
     .menu__title{
         display: flex;
         flex-direction: row;
@@ -93,7 +96,8 @@ main {
 
     }
 
-    .menu__plate{
+    .menu__plate
+    {
         display: flex;
         flex-direction: column;
         text-decoration: none;
@@ -103,36 +107,43 @@ main {
         padding: 10px 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         margin: 8px 8px;
-        h4{
+        h4
+        {
             font-size: 20px;
             font-weight: 500;
             margin: 0 0;
         }
-        p{
+        p
+        {
             padding-top: 5px;
             margin: 0 0;
         }
-    }
-    .menu__plate__description{
+        
+    .menu__plate__description
+    {
         display: flex;
         justify-content: space-between;
         font-weight: 300;
 
     }
-    .menu__plate__price{
+    .menu__plate__price
+    {
         display: flex;
         justify-content: flex-end;
         font-weight: 600;
+    }
     }
 }
 
 // Order section
 
-.order{
+.order
+{
     display: flex;
     justify-content:center;
     background-color: variables.$colorBackgroundLight;
-    .order__button{
+    .order__button
+    {
         padding: 15px 40px;
         border: transparent;
         border-radius: 30px 30px;
@@ -144,4 +155,3 @@ main {
         cursor: pointer;
     }
 }
-

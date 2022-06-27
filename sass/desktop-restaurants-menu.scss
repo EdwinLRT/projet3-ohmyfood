@@ -2,6 +2,7 @@
 @use "Utils/variables";
 @use "Components/loader"; 
 @use "Layouts/footer";
+@use "Utils/mixins";
 // Setup base
 body{
     font-family: variables.$standardFont;
@@ -64,7 +65,8 @@ main{
     background-color: variables.$colorBackgroundLight;
     border-radius: 35px 35px;
     z-index: 2;
-    width: 80%;
+    width: 90%;
+    @include mixins.menu-load;
     &__title{
         display: flex;
         flex-direction: row;
@@ -83,19 +85,6 @@ main{
         }
 
     }
-    &__starters{
-        width: 30%;
-        padding-bottom: 30px;
-        margin: 0 5px;
-    }
-    &__mains{
-        width: 30%;
-        margin: 0 5px;
-    }
-    &__desserts{
-        width: 30%;
-        margin: 0 5px;
-    }
     &__list{
         margin-bottom: 15px;
 
@@ -108,11 +97,16 @@ main{
         .underline {
             height:3px;
             background-color:#99e2d0;
-            width:3%;
+            width:10%;
             position:absolute;
             margin: 3px 0 0 10px;
             }
 
+    }
+    &__starters, &__mains, &__desserts
+    {
+        width: 30%;
+        padding-bottom: 30px;
     }
 
     &__plate{
