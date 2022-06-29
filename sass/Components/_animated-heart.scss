@@ -1,38 +1,58 @@
-.ohmyfood-heart{
-    font-size: 72px;
-    background: -webkit-linear-gradient(300deg, #FF79DA,#9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      -webkit-animation: scale-up-bottom 0.4s linear both;
-              animation: scale-up-bottom 0.4s linear both;
-  }
-  
-  @-webkit-keyframes scale-up-bottom {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-    }
-  }
-  @keyframes scale-up-bottom {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-    }
-  }
-  
+.fa-heart-animated
+{
+        position: relative;
+        z-index:1;
+        color:transparent;
+}
+.fa-heart-infront{
+        position:absolute;
+        z-index:2;
+        color:black;
+}
+.fa-heart-infront, .fa-heart-animated
+{
+ font-size:28px;
+      
+        &:hover + .fa-heart-animated
+        {
+          font-size: 28px;
+          background: -webkit-linear-gradient(300deg, #FF79DA,#9356DC);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          opacity:0;
+          -webkit-animation: scale-up-bottom 0.3s linear both;
+                  animation: scale-up-bottom 0.3s linear both;
+        }
+        @-webkit-keyframes scale-up-bottom {
+          0% {
+            -webkit-transform: scale(0.1);
+                    transform: scale(0.1);
+            -webkit-transform-origin: 50% 100%;
+                    transform-origin: 50% 100%;
+            opacity:0;
+          }
+          100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: 50% 100%;
+                    transform-origin: 50% 100%;
+            opacity:1;
+          }
+        }
+        @keyframes scale-up-bottom {
+          0% {
+            -webkit-transform: scale(0.2);
+                    transform: scale(0.2);
+            -webkit-transform-origin: 50% 100%;
+                    transform-origin: 50% 100%;
+            opacity:0;
+          }
+          100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: 50% 100%;
+                    transform-origin: 50% 100%;
+            opacity:1;
+          }
+        }
+}

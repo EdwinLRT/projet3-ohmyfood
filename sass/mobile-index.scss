@@ -4,6 +4,7 @@
 @use "Layouts/footer";
 @use "Layouts/location";
 @use "Layouts/discover";
+@use "Components/animated-heart";
 
 
 // Setup base
@@ -134,8 +135,6 @@ header{
             display: flex;
             align-items: flex-end;
             justify-content: end;
-            font-size: 25px;
-            color: variables.$colorBackgroundDark;
             position: absolute;
             left: 85%;
             bottom: 9%;
