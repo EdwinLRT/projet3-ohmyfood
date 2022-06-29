@@ -3,6 +3,7 @@
 @use "Components/loader"; 
 @use "Layouts/footer";
 @use "Utils/mixins";
+@use "Components/animated-heart";
 
 // Setup base
 body{
@@ -69,8 +70,7 @@ main {
         h2{
             margin: 0 0;
         }
-        .fa-regular{
-            font-size: 24px;
+        .fa-regular, .fa-solid{
             padding-right: 15px;
         }
 
