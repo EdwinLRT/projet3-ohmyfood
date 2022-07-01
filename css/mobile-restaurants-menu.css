@@ -42,15 +42,11 @@
 @-webkit-keyframes loader-hide {
   to {
     visibility: hidden;
-    height: 0;
-    width: 0;
   }
 }
 @keyframes loader-hide {
   to {
     visibility: hidden;
-    height: 0;
-    width: 0;
   }
 }
 
@@ -114,19 +110,19 @@ footer a {
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.95);
     transform-origin: 50% 100%;
     opacity: 1;
   }
 }
 @keyframes scale-up-bottom {
   0% {
-    transform: scale(0.2);
+    transform: scale(0.1);
     transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.95);
     transform-origin: 50% 100%;
     opacity: 1;
   }
@@ -214,7 +210,7 @@ main {
     opacity: 1;
   }
 }
-.menu .menu__title {
+.menu__restaurantName {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,57 +218,71 @@ main {
   font-family: "Shrikhand", cursive;
   padding: 20px 15px;
 }
-.menu .menu__title h2 {
+.menu__restaurantName h2 {
   margin: 0 0;
 }
-.menu .menu__title .fa-regular, .menu .menu__title .fa-solid {
-  padding-right: 15px;
-}
-.menu .menu__list {
+.menu__list {
   margin-bottom: 15px;
 }
-.menu .menu__list h3 {
+.menu__list h3 {
   text-transform: uppercase;
   font-weight: 300;
   padding-left: 10px;
   margin-bottom: 0;
 }
-.menu .menu__list .underline {
+.menu__list .underline {
   height: 3px;
   background-color: #99e2d0;
   width: 10%;
   position: absolute;
   margin: 3px 0 0 10px;
 }
-.menu .menu__plate {
+.menu__plate {
   display: flex;
-  flex-direction: column;
   text-decoration: none;
   color: black;
+  justify-content: space-between;
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   border-radius: 15px 15px;
-  padding: 10px 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   margin: 8px 8px;
+  position: relative;
 }
-.menu .menu__plate h4 {
+.menu__plate__description {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  padding: 10px 10px;
+}
+.menu__plate__description h4 {
   font-size: 20px;
   font-weight: 500;
   margin: 0 0;
 }
-.menu .menu__plate p {
+.menu__plate__description p {
   padding-top: 5px;
   margin: 0 0;
 }
-.menu .menu__plate .menu__plate__description {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 300;
-}
-.menu .menu__plate .menu__plate__price {
+.menu__plate__price {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   font-weight: 600;
+  margin-right: 30px;
+}
+.menu__plate__checkbox {
+  display: flex;
+  height: 66.4px;
+  margin-right: -50px;
+  width: 20px;
+  border: solid green 3px;
+  color: red;
+  position: absolute;
+  right: 20px;
 }
 
 .order {
