@@ -1,0 +1,23 @@
+@use "../Utils/variables";
+.new_dot{
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: variables.$colorThird;
+    border-radius: 3px;
+    height: 20px;
+    width: auto;
+    top: 15px;
+    right: 15px;
+    color: green;
+    h5{
+        font-family: variables.$standardFont;
+        color: green;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 5px 5px;
+
+    }
+
+  }

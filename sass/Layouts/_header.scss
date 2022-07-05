@@ -1,0 +1,11 @@
+@use "../Utils/variables";
+
+// Header - mobile first
+header{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    .header__logo{
+        max-width: 50%;
+    }
+}

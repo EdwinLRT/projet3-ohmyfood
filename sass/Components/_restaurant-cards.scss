@@ -1,0 +1,62 @@
+@use "../Utils/variables";
+// Restaurant cards - mobile first
+
+.restaurants{
+    background-color: variables.$colorBackgroundLight ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    
+    &__title{
+        width: 90%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    &__cards{
+        background-color: #fff;
+        border-radius: 30px;
+        width: 90%;
+        position: relative;
+        margin: 8px 0 8px 0;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    img{
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+        border-radius: 20px 20px 0 0;
+    }
+    &__cards--sub{
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        h4{
+            width: 100%;
+            margin: 10px 0 5px 0;
+            color: black;
+            font-size: 18px;
+        }
+        p{
+            margin: 5px 0 17px 0;
+            font-size: 16px;
+            font-weight: 300;
+            color: black;
+        }
+
+        i{
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+            position: absolute;
+            left: 85%;
+            bottom: 9%;
+        }
+
+}

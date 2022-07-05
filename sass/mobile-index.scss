@@ -1,25 +1,19 @@
 // imports
 @use "Utils/variables";
 @use "Components/loader"; 
+@use "Layouts/header";
 @use "Layouts/footer";
 @use "Layouts/location";
+@use "Layouts/explanation";
 @use "Layouts/discover";
+@use "Components/restaurant-cards";
 @use "Components/animated-heart";
+@use "Components/new_dot";
 
 
 // Setup base
 body{
     font-family: variables.$standardFont;
-}
-
-// Header 
-header{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px;
-    .header__logo{
-        max-width: 50%;
-    }
 }
 
 // Location section 
@@ -38,106 +32,3 @@ header{
     text-align: center;
 }
 
-// Explanation section 
-.explanation{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 5px;
-    padding-bottom: 30px;
-
-    &__title{
-        width: 100%;
-        margin-left: 20px;
-    }
-    &__numberDot{
-        color: #fff;
-        font-size: 14px;
-        background-color: variables.$colorPrime;
-        padding: 5px 10px;
-        border-radius: 20px;
-        position: absolute;
-        left: 2%;
-    }
-    &__step{
-        width: 100%;
-        border-radius: 15px 15px 15px 15px;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        background-color: variables.$colorBackgroundLight;
-        margin: 10px 20px 10px 20px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-        .fa-solid{
-            color: grey;
-            position: absolute;
-            left: 17%;
-        }
-    }
-
-}
-
-// Restaurant cards
-
-.restaurants{
-    background-color: variables.$colorBackgroundLight ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    
-    &__title{
-        width: 90%;
-    }
-
-    a{
-        text-decoration: none;
-    }
-    &__cards{
-        background-color: #fff;
-        border-radius: 30px;
-        width: 90%;
-        position: relative;
-        margin: 8px 0 8px 0;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    }
-    img{
-        height: 160px;
-        width: 100%;
-        object-fit: cover;
-        object-position: center bottom;
-        border-radius: 20px 20px 0 0;
-    }
-    &__cards--sub{
-        padding-left: 15px;
-        padding-right: 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-        h4{
-            width: 100%;
-            margin: 10px 0 5px 0;
-            color: black;
-            font-size: 18px;
-        }
-        p{
-            margin: 5px 0 17px 0;
-            font-size: 16px;
-            font-weight: 300;
-            color: black;
-        }
-
-        i{
-            display: flex;
-            align-items: flex-end;
-            justify-content: end;
-            position: absolute;
-            left: 85%;
-            bottom: 9%;
-        }
-
-}

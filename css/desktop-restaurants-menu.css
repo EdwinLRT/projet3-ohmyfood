@@ -50,33 +50,27 @@
   }
 }
 
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding-bottom: 20px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  position: relative;
+  z-index: 2;
 }
-footer .footer__title {
-  margin: 0;
-  padding: 20px 20px 15px 20px;
-  font-family: "Shrikhand", cursive;
+header .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
-footer ul {
-  padding-left: 20px;
-  margin: 0;
-}
-footer li {
-  list-style: none;
-  padding: 5px 0px;
-}
-footer li i {
-  padding-right: 10px;
-}
-footer li .fa-handshake-angle {
-  font-size: 12px;
-}
-footer a {
-  color: #fff;
-  text-decoration: none;
+header a {
+  color: black;
+  width: 5%;
+  font-size: 20px;
+  padding: 10px 10px;
+  position: absolute;
+  left: 5%;
 }
 
 .fa-heart-animated {
@@ -128,90 +122,53 @@ footer a {
   }
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0px;
+.menu {
   position: relative;
-  z-index: 2;
-}
-header .header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-}
-header a {
-  color: black;
-  width: 5%;
-  font-size: 20px;
-  padding: 10px 10px;
-  position: absolute;
-  left: 5%;
-}
-
-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #EAEAEA;
-}
-
-.restaurants__image {
-  width: 50%;
-  z-index: 1;
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
-.restaurants__image img {
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 30px 30px;
-}
-
-.restaurant {
   background-color: #F6F6F6;
-  border-radius: 35px 35px;
+  border-radius: 35px 35px 0 0;
   z-index: 2;
-  width: 80%;
 }
-
-.restaurant__name {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Shrikhand", cursive;
-}
-.restaurant__name h2 {
-  margin: 20px 20px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  margin: 30px 30px;
-}
-.menu__starters {
+.menu .menu__plate--1 {
   -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
           animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
 }
-.menu__mains {
+.menu .menu__plate--2 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+.menu .menu__plate--3 {
   -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
           animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
 }
-.menu__desserts {
+.menu .menu__plate--4 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+.menu .menu__plate--5 {
   -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
           animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+}
+.menu .menu__plate--6 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+}
+.menu .menu__plate--7 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s both;
+}
+.menu .menu__plate--8 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+}
+.menu .menu__plate--9 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+.menu .menu__plate--10 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 @-webkit-keyframes menu-appear {
   0% {
@@ -233,18 +190,16 @@ main {
     opacity: 1;
   }
 }
-.menu .menu__starters {
-  width: 30%;
-  overflow: hidden;
-  margin-left: 4%;
+.menu__restaurantName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  padding: 20px 15px;
 }
-.menu .menu__mains {
-  width: 30%;
-  overflow: hidden;
-}
-.menu .menu__desserts {
-  width: 30%;
-  overflow: hidden;
+.menu__restaurantName h2 {
+  margin: 0 0;
 }
 .menu__list {
   margin-bottom: 15px;
@@ -253,12 +208,13 @@ main {
   text-transform: uppercase;
   font-weight: 300;
   padding-left: 10px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 .menu__list .underline {
   height: 3px;
   background-color: #99e2d0;
-  width: 10%;
+  width: 10vw;
   position: absolute;
   margin: 3px 0 0 10px;
 }
@@ -266,22 +222,21 @@ main {
   display: flex;
   text-decoration: none;
   color: black;
+  justify-content: space-between;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 80%;
   background-color: rgb(255, 255, 255);
   border-radius: 15px 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  margin: 10px 8px;
+  margin: 8px 8px;
+  position: relative;
 }
 .menu__plate__description {
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  white-space: nowrap;
+  justify-content: space-between;
   text-overflow: ellipsis;
   font-weight: 300;
-  flex-basis: 90%;
   padding: 10px 10px;
 }
 .menu__plate__description h4 {
@@ -336,22 +291,6 @@ main {
   transform: rotate(360deg);
 }
 
-.order {
-  display: flex;
-  justify-content: center;
-}
-.order .order__button {
-  padding: 15px 40px;
-  border: transparent;
-  border-radius: 30px 30px;
-  color: #fff;
-  font-weight: 400;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
-  margin: 35px 0 60px 0;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
 footer {
   background-color: #353535;
   color: #fff;
@@ -379,4 +318,158 @@ footer li .fa-handshake-angle {
 footer a {
   color: #fff;
   text-decoration: none;
+}
+
+.order__button {
+  padding: 15px 40px;
+  border: transparent;
+  border-radius: 30px 30px;
+  color: #fff;
+  font-weight: 400;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  margin: 35px 0 60px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.order__button:hover {
+  transition-duration: 500ms;
+  filter: brightness(110%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header .header__logo {
+  width: 10%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+
+.restaurant__image {
+  width: 50%;
+  z-index: 1;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.restaurant__image img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px 30px;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  border-radius: 35px 35px;
+  z-index: 2;
+  width: 90%;
+}
+
+.restaurant__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+}
+.restaurant__name h2 {
+  margin: 20px 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.menu .menu__plate--1 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+.menu .menu__plate--2 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+.menu .menu__plate--3 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+.menu .menu__plate--4 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+.menu .menu__plate--5 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+}
+.menu .menu__plate--6 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+}
+.menu .menu__plate--7 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s both;
+}
+.menu .menu__plate--8 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+}
+.menu .menu__plate--9 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+.menu .menu__plate--10 {
+  -webkit-animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+          animation: menu-appear 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+@keyframes menu-appear {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .menu__starters {
+  width: 35%;
+  overflow: hidden;
+  margin-left: 4%;
+}
+.menu .menu__mains {
+  width: 35%;
+  overflow: hidden;
+}
+.menu .menu__desserts {
+  width: 35%;
+  overflow: hidden;
+}
+.menu__list .underline {
+  width: 2vw;
+}
+.menu__plate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  margin: 10px 8px;
+}
+.menu__plate__description {
+  display: block;
+  white-space: nowrap;
+  flex-basis: 90%;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=desktop-restaurants-menu.css.map */

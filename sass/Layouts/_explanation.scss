@@ -1,0 +1,54 @@
+@use "../Utils/variables";
+
+
+// Explanation section - mobile first
+.explanation{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    padding-bottom: 30px;
+
+    &__title{
+        width: 100%;
+        margin-left: 20px;
+    }
+    &__numberDot{
+        color: #fff;
+        font-size: 14px;
+        background-color: variables.$colorPrime;
+        padding: 6px 10px;
+        border-radius: 20px;
+        position: absolute;
+        left: 2%;
+    }
+    &__step{
+        width: 100%;
+        border-radius: 15px 15px 15px 15px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: variables.$colorBackgroundLight;
+        margin: 10px 20px 10px 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+        &:hover{
+            transition-duration: 500ms;
+            background-color: lighten(variables.$colorPrime, 30%)
+        }
+        
+        h5{
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .fa-solid{
+            color: grey;
+            position: absolute;
+            left: 17%;
+        }
+    }
+
+}

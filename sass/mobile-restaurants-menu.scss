@@ -1,9 +1,12 @@
 // imports
 @use "Utils/variables";
 @use "Components/loader"; 
+@use "Layouts/header-alternative";
+@use "Layouts/menu-section";
 @use "Layouts/footer";
 @use "Utils/mixins";
 @use "Components/animated-heart";
+@use "Components/order-button";
 
 
 // Setup base
@@ -11,166 +14,45 @@ body{
     font-family: variables.$standardFont;
 }
 
-// Header 
-header{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0px;
-    position: relative;
-    z-index: 2;
-    .header__logo{    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-
-    }
-    a{
-        color: black;
-        width: 5%;
-        font-size: 20px;
-        padding: 10px 10px;
-        position: absolute;
-        left: 5%;
-    }
-}
 
 main {
 	background-color: variables.$colorBackgroundMid ;
 }
 
 // Image section 
-.restaurants__image{
-    width: 100%;
-    z-index: 1;
-    img{
-        width: 100%;
-        object-fit: cover;
-    }
-}
-
-
-// Menu section
-.menu
+.restaurant
 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     background-color: variables.$colorBackgroundLight;
     border-radius: 35px 35px 0 0;
-    z-index: 2;
-    margin-top: -50px;
-    @include mixins.menu-load;
-    &__restaurantName{
+    z-index: 3;
+    position: relative;
+    &__image
+    {
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+            margin-bottom: -75px;
+            
+        }
+    }
+    .restaurant__name
+    {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin: 0px 25px;
         font-family: variables.$highlightFont;
-        padding: 20px 15px;
-
-        h2{
-            margin: 0 0;
-        }
+        font-size: 22px;
     }
-    &__list{
-        margin-bottom: 15px;
-
-        h3{
-            text-transform: uppercase;
-            font-weight: 300;
-            padding-left: 10px;
-            margin-bottom: 0;
-        }
-        .underline {
-            height:3px;
-            background-color:#99e2d0;
-            width:10%;
-            position:absolute;
-            margin: 3px 0 0 10px;
-            }
-
-    }
-
-    &__plate
-{
-    display: flex;
-    text-decoration: none;
-    color: black;
-    justify-content: space-between;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin: 8px 8px;
-    position: relative;
-
-        &__description
-        {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            justify-content: space-between;
-            text-overflow: ellipsis;
-            font-weight: 300;
-            padding: 10px 10px;
-            h4
-            {   
-                font-size: 20px;
-                font-weight: 500;
-                margin: 0 0;
-            }
-            p
-            {
-                padding-top: 5px;
-                margin: 0 0;
-            }
-        }
-        &__price
-        {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-weight: 600;
-        margin-right: 30px;
-        }
-        &__checkbox
-        {
-            display: flex;
-            height: 66.4px;
-            margin-right: -50px;
-            width: 20px;
-            border: solid green 3px;
-            color: red;
-            position: absolute;
-            right:20px;
-
-        }
-    }
-  
 }
-
-
-
 
 // Order section
 
-.order
-{
-    display: flex;
+ .order
+ {
+     display: flex;
     justify-content:center;
     background-color: variables.$colorBackgroundLight;
-    .order__button
-    {
-        padding: 15px 40px;
-        border: transparent;
-        border-radius: 30px 30px;
-        color: #fff;
-        font-weight: 400;
-        background: linear-gradient(to top left, variables.$colorPrime, variables.$colorSecond);
-        margin:35px 0 60px 0;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-}
+ }

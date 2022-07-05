@@ -4,11 +4,13 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À la française</title>
+    <title>Oh my food</title>
    
     <!--Css links -->
-    <link rel="stylesheet" href="sass/normalize.css">
-    <link rel="stylesheet" href="sass/mobile.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media='screen and (max-width: 768px)' href="css/mobile-restaurants-menu.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 769px) and (max-width: 992px)' href="css/tablet-restaurants-menu.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 993px)' href="css/desktop-restaurants-menu.css"/>
 
     <!-- Shrikhand Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,88 +31,182 @@
 
     <!-- HEADER -->
     <header>
+        <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
         <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo-ohmyfood">
     </header>
 
     <!-- MAIN  -->
+
+        <!-- Restaurant picture  -->
     <main>
-
-        <section class="location">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>
-        </section>
-        <section class="discover">
-            <h2 class="discover discover__title">Réservez le menu qui vous convient</h2>
-            <p class="discover discover__slogan">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button class="discover discover__button">Explorez nos restaurants</button>
+        <section class="restaurant__image">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a-la-francaise-restaurant">
         </section>
 
-        <section class="explanation">
-
-            <div>
-                <h2 class="explanation__title">Fonctionnement</h2>
+        <!-- Restaurant menu  -->
+    <section class="restaurant">
+        <div class="restaurant__name">
+            <h2>À la française</h2>
+            <div class=heart-box>
+                <i class="fa-regular fa-heart fa-heart-infront"></i>
+                <i class="fa-solid fa-heart fa-heart-animated"></i>
             </div>
-
-            <div  class="explanation__step">
-                <p class="explanation__numberDot">1</p>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h5>Choisissez un restaurant</h5>
+        </div>
+        <div class="menu">
+            <div class="menu__starters">
+                <div class="menu__list">
+                    <h3>Entrées</h3>
+                    <div class="underline"> </div>
+                </div>
+                    <a href="" class="menu__plate menu__plate--1">
+                        <div class="menu__plate__description">
+                            <h4>Fricassée d'escargot</h4>
+                            <p>Au piment d'Espelette</p>
+                        </div>
+                        <div class="menu__plate__slider">
+                            <div class="menu__plate__price">
+                                <p >25€</p>
+                            </div>
+                            <div class="menu__plate__checkbox">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate menu__plate--2">
+                        <div class="menu__plate__description">
+                            <h4>Foie gras de canard mi-cuit</h4>
+                            <p>Et ses copeaux de truffe noire</p>
+                        </div>
+                        <div class="menu__plate__slider">
+                            <div class="menu__plate__price">
+                                <p >35€</p>
+                            </div>
+                            <div class="menu__plate__checkbox">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="menu__plate menu__plate--3">
+                        <div class="menu__plate__description">
+                            <h4>Oeuf au plat</h4>
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <div class="menu__plate__slider">
+                            <div class="menu__plate__price">
+                                <p >20€</p>
+                            </div>
+                            <div class="menu__plate__checkbox">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </a>
             </div>
+            <div class="menu__mains">
+                <div class="menu__list">
+                    <h3>Plats</h3>
+                    <div class="underline"> </div>
+                </div>
+                <a href="" class="menu__plate menu__plate--4">
+                    <div class="menu__plate__description">
+                        <h4>Filet de boeuf aux herbes</h4>
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <div class="menu__plate__slider">
+                        <div class="menu__plate__price">
+                            <p >40€</p>
+                        </div>
+                        <div class="menu__plate__checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="menu__plate menu__plate--5">
+                    <div class="menu__plate__description">
+                        <h4>Parmentier de queue de boeuf</h4>
+                        <p>À la truffe noire sur sa purée de panais</p>
+                    </div>
+                    <div class="menu__plate__slider">
+                        <div class="menu__plate__price">
+                            <p >35€</p>
+                        </div>
+                        <div class="menu__plate__checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="menu__plate menu__plate--6">
+                    <div class="menu__plate__description">
+                        <h4>Filet de turbot</h4>
+                        <p>Aux agrumes</p>
+                    </div>
+                    <div class="menu__plate__slider">
+                        <div class="menu__plate__price">
+                            <p >44€</p>
+                        </div>
+                        <div class="menu__plate__checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+            <div class="menu__desserts">
+                <div class="menu__list">
+                    <h3>Desserts</h3>
+                    <div class="underline"> </div>
+                </div>
+                <a href="" class="menu__plate menu__plate--7">
+                    <div class="menu__plate__description">
+                        <h4>Paris-Brest</h4>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="menu__plate__slider">
+                        <div class="menu__plate__price">
+                            <p >18€</p>
+                        </div>
+                        <div class="menu__plate__checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="menu__plate menu__plate--8">
+                    <div class="menu__plate__description">
+                        <h4>Macaron au chocolat d'exception</h4>
+                        <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <div class="menu__plate__slider">
+                        <div class="menu__plate__price">
+                            <p >22€</p>
+                        </div>
+                        <div class="menu__plate__checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="menu__plate menu__plate--9">
+                    <div class="menu__plate__description">
+                        <h4>Mousse au chocolat </h4>
+                        <p>Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                    <div class="menu__plate__slider">
+                        <div class="menu__plate__price">
+                            <p >23€</p>
+                        </div>
+                        <div class="menu__plate__checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </a> 
+                </div>
+        </div>
 
-            <div class="explanation__step">
-                <p class="explanation__numberDot">2</p>
-                <i class="fa-solid fa-list-ul"></i>
-                <h5>Composez votre menu</h5>
-            </div>
-
-            <div class="explanation__step">
-                <p class="explanation__numberDot">3</p>
-                <i class="fa-solid fa-store"></i>
-                <h5>Dégustez au restaurant</h5>
-            </div>
+    </section>
+        <!-- Order button  -->
         
-        </section>
-        <section class="restaurants">
-            <div class="restaurants__title">
-                <h2>Restaurants</h2>
-            </div>
-            <a href="" class="restaurants__cards">
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la-palette-de-gout-menilmontant">
-                <div class="restaurants__cards--sub">
-                    <h4>La palette de goût</h4>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Ménilmontant</p>
-                </div>
-            </a>
-                
-            <a href="" class="restaurants__cards">
-                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la-note-enchantee-charonne">
-                <div class="restaurants__cards--sub">
-                    <h4>La note enchantée</h4>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Charonne</p>
-                </div>
-            </a>
-                
-            <a href="restaurant_a-la-francaise.html" class="restaurants__cards">
-                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a-la-francaise-cite-rouge">
-                <div class="restaurants__cards--sub">
-                    <h4>À la française</h4>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Cité Rouge</p>
-                </div>
-            </a>
-                
-            <a href="" class="restaurants__cards">
-                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le-delice-des-sens-folie-mericourt">
-                <div class="restaurants__cards--sub">
-                    <h4>Le délice des sens</h4>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Folie-Méricourt</p>
-                </div>
-            </a>
-
-        </section>
+    <section class="order">
+            <button class="order order__button">Commander</button>
+    </section>
 
     </main>
 
@@ -122,7 +218,9 @@
             <li><i class="fa-solid fa-utensils"></i>Proposez un restaurant</li>
             <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
-            <li>Contact</li>
+            <li>
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
         </ul>
 
     </footer> 
