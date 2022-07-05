@@ -60,7 +60,7 @@ main{
     background-color: variables.$colorBackgroundLight;
     border-radius: 35px 35px;
     z-index: 2;
-    width: 80%;
+    width: 90%;
 }
 .restaurant__name{
     display: flex;
@@ -80,20 +80,20 @@ main{
     flex-direction: row;
     position: relative;
     justify-content: center;
-    margin: 30px 30px;
+    margin: 30px 0px;
     @include mixins.menu-load;
     
     .menu__starters{
-        width: 30%;
+        width: 35%;
         overflow: hidden;
         margin-left: 4%;
     }
     .menu__mains{
-        width: 30%;
+        width: 35%;
         overflow: hidden;
     }
     .menu__desserts{
-        width: 30%;
+        width: 35%;
         overflow: hidden;
     }
 
@@ -190,8 +190,6 @@ main{
             }
         }
        
-
-  
     }
 }
     .menu__plate:hover
