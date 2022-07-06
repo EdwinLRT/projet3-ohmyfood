@@ -364,6 +364,7 @@ header .header__logo {
 }
 .restaurants img {
   height: 250px;
+  max-height: 20vh;
   -o-object-position: center center;
      object-position: center center;
 }/*# sourceMappingURL=tablet-index.css.map */

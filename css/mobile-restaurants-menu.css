@@ -356,6 +356,7 @@ main {
 }
 .restaurant__image img {
   width: 100%;
+  max-height: 35vh;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -367,7 +368,7 @@ main {
   align-items: center;
   margin: 0px 25px;
   font-family: "Shrikhand", cursive;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .order {
