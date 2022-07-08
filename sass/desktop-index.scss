@@ -48,9 +48,12 @@ header{
 .explanation{
     justify-content: center;
 
-
     div:nth-child(1){
-        width: 100%;
+        display: flex;
+        flex: 0 0 100%;
+    }
+    &__title{
+        margin: none;
     }
     &__numberDot{
         left:-2%;
@@ -59,7 +62,8 @@ header{
         width: 25%;
         position: relative;
         .fa-solid{
-            padding: 0 20px 0 0;
+           position: relative;
+           left:-5%;
 
         }
     }

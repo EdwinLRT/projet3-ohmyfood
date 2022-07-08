@@ -343,7 +343,11 @@ header .header__logo {
   justify-content: center;
 }
 .explanation div:nth-child(1) {
-  width: 100%;
+  display: flex;
+  flex: 0 0 100%;
+}
+.explanation__title {
+  margin: none;
 }
 .explanation__numberDot {
   left: -2%;
@@ -353,7 +357,8 @@ header .header__logo {
   position: relative;
 }
 .explanation__step .fa-solid {
-  padding: 0 20px 0 0;
+  position: relative;
+  left: -5%;
 }
 
 .restaurants {
